@@ -27,11 +27,21 @@ $Pale-blue: hsl(221, 100%, 96%);
 $Light-lavender: hsl(241, 100%, 89%);
 $Dark-gray-blue: hsl(224, 30%, 27%);
 
+@mixin flex-center{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    background-color: $Light-lavender;
+    // @include flex-center;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -44,4 +54,34 @@ p{
 .container{
     width: 90%;
     border-radius: .4rem;
+    @include flex-center;
+
+
+    .container-result{
+        padding: 1.2rem;
+        @include flex-center;
+        background-image: linear-gradient(to bottom,$Light-slate-blue, $Light-royal-blue);
+        border-radius: 1.2rem;
+
+        h3{
+            color: $Light-lavender;
+        }
+
+        .container-result-cicle{
+            flex: 0 0 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-image: linear-gradient(to top,$Light-slate-blue, $Light-royal-blue);
+            @include flex-center;
+            gap: .3rem;
+
+            h1{
+                color: $White;
+            }
+
+            p{
+                color: $Light-lavender;
+            }
+        }
+    }
 }

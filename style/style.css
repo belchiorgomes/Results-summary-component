@@ -9,7 +9,8 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-flow: column wrap;
+  background-color: hsl(241, 100%, 89%);
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -22,4 +23,40 @@ p {
 .container {
   width: 90%;
   border-radius: 0.4rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container .container-result {
+  padding: 1.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 1.2rem;
+}
+.container .container-result h3 {
+  color: hsl(241, 100%, 89%);
+}
+.container .container-result .container-result-cicle {
+  flex: 0 0 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.3rem;
+}
+.container .container-result .container-result-cicle h1 {
+  color: hsl(0, 0%, 100%);
+}
+.container .container-result .container-result-cicle p {
+  color: hsl(241, 100%, 89%);
 }/*# sourceMappingURL=style.css.map */
