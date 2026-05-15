@@ -32,7 +32,7 @@ $Dark-gray-blue: hsl(224, 30%, 27%);
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    // gap: 1rem;
 }
 
 body{
@@ -55,15 +55,26 @@ p{
     width: 90%;
     border-radius: .4rem;
     @include flex-center;
-
+    background-color: $White;
+    border-radius: 1.2rem;
 
     .container-result{
         padding: 1.2rem;
         @include flex-center;
         background-image: linear-gradient(to bottom,$Light-slate-blue, $Light-royal-blue);
         border-radius: 1.2rem;
+        gap: 1rem;
+
+        h2{
+            color: $Pale-blue;
+        }
 
         h3{
+            color: $Light-lavender;
+        }
+
+        p{
+            text-align: center;
             color: $Light-lavender;
         }
 
@@ -78,10 +89,13 @@ p{
             h1{
                 color: $White;
             }
-
-            p{
-                color: $Light-lavender;
-            }
         }
+    }
+
+    .container-summary{
+        @include flex-center;
+        gap: 1rem;
+        padding: 1.2rem;
+        width: 100%;
     }
 }
