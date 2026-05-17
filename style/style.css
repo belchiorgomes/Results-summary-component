@@ -72,4 +72,37 @@ p {
   gap: 1rem;
   padding: 1.2rem;
   width: 100%;
+}
+.container .container-summary h2 {
+  align-self: flex-start;
+}
+.container .container-summary .container-summary-result {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+.container .container-summary .container-summary-result .result-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-radius: 0.4rem;
+  transition: all 0.6s ease-in-out;
+}
+.container .container-summary .container-summary-result .result-box:hover {
+  background-color: hsl(252, 100%, 67%);
+}
+.container .container-summary button {
+  width: 100%;
+  display: block;
+  color: hsl(221, 100%, 96%);
+  border: none;
+  border-radius: 1.2rem;
+  background-color: hsl(224, 30%, 27%);
+  padding: 12px 18px;
+  transition: all 0.6s ease-in-out;
+}
+.container .container-summary button:hover {
+  background-image: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */

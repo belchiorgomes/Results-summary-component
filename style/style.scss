@@ -97,5 +97,44 @@ p{
         gap: 1rem;
         padding: 1.2rem;
         width: 100%;
+
+        h2{
+            align-self: flex-start;
+        }
+
+        .container-summary-result{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 1rem;
+
+            .result-box{
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 18px;
+                border-radius: .4rem;
+                transition: all .6s ease-in-out;
+
+                &:hover{
+                    background-color: $Light-slate-blue;
+                }
+            }
+        }
+
+        button{
+            width: 100%;
+            display: block;
+            color: $Pale-blue;
+            border: none;
+            border-radius: 1.2rem;
+            background-color: $Dark-gray-blue;
+            padding: 12px 18px;
+            transition: all .6s ease-in-out;
+
+            &:hover{
+                background-image: linear-gradient(to top,$Light-slate-blue, $Light-royal-blue);
+                color: $White;
+            }
+        }
     }
 }
